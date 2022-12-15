@@ -1,0 +1,52 @@
+.sobre{
+text-align: center;  
+}
+
+.sobre__titulo{
+    text-align: center;
+    font-size: 30px;
+    color: var(--branco);
+}
+
+.sobre__descricao{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--branco);
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa__item{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--branco);
+    padding-right: 1em;
+}
+
+
+.caixa__link{
+    background: var(--branco);
+    padding: 0.5em 1em 0 1em;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:0) {
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .caixa__link:hover{
+        transition: 1s;
+        background-color: var(--azul);
+    }
+    
+}

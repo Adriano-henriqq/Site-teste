@@ -1,0 +1,22 @@
+@import url(cabecalho.css);
+@import url(perfil.css);
+@import url(sobre.css);
+@import url(responsivo.css);
+
+
+
+:root{
+    --font-principal:'Roboto Condensed';
+    --preto-fundo: #00030C;
+    --branco: #505050;
+    --azul: #6d7ae1;
+}
+
+body{
+    font-family: var(--font-principal);
+    background: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+

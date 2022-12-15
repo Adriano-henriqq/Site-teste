@@ -1,0 +1,94 @@
+.cabecalho{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titulo{
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+
+.contato__item{
+    background: #585a6e;
+    border-radius: 6px;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.contato__item:nth-child(2)::before{
+    content: url(../img/icons8-github.svg);
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+
+.contato__item::before{
+    content: url(../img/linkedin-logo.png);
+    position: relative;
+    right: 10px;
+    top: 2px;
+    width: 5%;
+}
+
+.contato__item:hover{
+    background-color: #72b1fe;
+}
+
+@media screen and (min-width:0){
+    .cabecalho{
+        justify-content: space-around;
+        width: 100vw;
+    }
+    .contato{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 1px 0;
+        padding: 0 1em;
+       
+    }
+    .contato__item{
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        justify-content: end;
+        margin: 0 0.5em 0.5em;
+        padding: 1em;
+
+    }
+
+    .titulo{
+        padding: 1em;      
+        font-size: 22px;
+        margin: 0 0.5em;
+        width: 100vw;
+    }
+    .contato__item:nth-child(2)::before{
+        position: relative;
+        right: 25px;
+        top: 2px;
+        width: 5%;
+
+    }
+    .contato__item::before{
+        position: relative;
+        right: 18px;
+        top: 2px;
+    }
+}
+    @media screen and (min-width:768px) {
+        .contato{
+            margin: 0 2em;
+        }
+        .contato__item{
+            padding: 1em 2em;
+            margin-right: 1em;
+        }
+        .titulo{
+            padding: 0 2em;
+            margin: 1em 2em;
+            font-size: 26px;
+        }
+    }
